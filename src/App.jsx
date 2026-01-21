@@ -6,6 +6,7 @@ import DppaCompliance from './pages/DppaCompliance';
 import InsideAccidentReports from './pages/InsideAccidentReports';
 import InvestigativeIntelligence from './pages/InvestigativeIntelligence';
 import CaseIntakeValue from './pages/CaseIntakeValue';
+import MotorVehicleAccidentDataReporting from './pages/MotorVehicleAccidentDataReporting';
 
 function App() {
   return (
@@ -34,6 +35,10 @@ function App() {
         <Route
           path="/personal-injury/mva-intelligence-case-intake-and-case-value"
           element={<CaseIntakeValue />}
+        />
+        <Route
+          path="/personal-injury/motor-vehicle-accident-data-reporting"
+          element={<MotorVehicleAccidentDataReporting />}
         />
       </Routes>
     </Router>

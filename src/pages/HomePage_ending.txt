@@ -1,0 +1,7 @@
+            </div>
+            <Footer />
+        </>
+    );
+};
+
+export default HomePage;
