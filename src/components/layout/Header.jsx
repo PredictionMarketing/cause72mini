@@ -7,7 +7,7 @@ const Header = () => {
 
     const handleBookCall = () => {
         const currentUrl = encodeURIComponent(window.location.href);
-        window.location.href = `https://calendly.com/placeholder?referrer=${currentUrl}`;
+        window.location.href = `https://calendly.com/tommylc?referrer=${currentUrl}`;
     };
 
     const navItems = [
@@ -15,63 +15,78 @@ const Header = () => {
         { label: 'Compliance', path: '/personal-injury/dppa-compliance-motor-vehicle-accident-data' },
         { label: 'Reports', path: '/personal-injury/inside-motor-vehicle-accident-reports' },
         { label: 'Investigative', path: '/personal-injury/investigative-mva-intelligence-for-law-firms' },
+        { label: 'Case Value', path: '/personal-injury/mva-intelligence-case-intake-and-case-value' },
+        { label: 'Data Reporting', path: '/personal-injury/motor-vehicle-accident-data-reporting' },
     ];
 
     return (
-        <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b border-border">
-            <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-                <Link to="/" className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
-                    Cause72
+        <header className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
+            <div className="container mx-auto px-6 h-20 flex items-center justify-between">
+                <Link to="/" className="flex items-center gap-2 transition-transform hover:scale-105 duration-200">
+                    <img
+                        src="/assets/images/cause72_logo.png"
+                        alt="Cause72"
+                        className="h-12 w-auto object-contain"
+                    />
                 </Link>
-                <nav className="hidden md:flex items-center gap-6">
+
+                {/* Desktop Navigation */}
+                <nav className="hidden lg:flex items-center gap-1">
                     {navItems.map((item) => (
                         <Link
                             key={item.path}
                             to={item.path}
-                            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                            className="px-4 py-2 text-[15px] font-semibold text-slate-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-200"
                         >
                             {item.label}
                         </Link>
                     ))}
-                    <button
-                        onClick={handleBookCall}
-                        className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-medium hover:bg-primary/90 transition-colors"
-                    >
-                        <Phone size={16} />
-                        Book a Call
-                    </button>
+                    <div className="pl-4 ml-2 border-l border-slate-200">
+                        <button
+                            onClick={handleBookCall}
+                            className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-slate-900 to-slate-800 text-white rounded-full text-[15px] font-bold hover:shadow-lg hover:ring-2 hover:ring-offset-2 hover:ring-slate-900 transition-all transform hover:-translate-y-0.5"
+                        >
+                            <Phone size={16} className="text-blue-200" />
+                            Book a Call
+                        </button>
+                    </div>
                 </nav>
+
+                {/* Mobile menu button */}
                 <button
-                    className="md:hidden p-2"
+                    className="lg:hidden p-2 text-slate-600 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
-                    {isMobileMenuOpen ? <X /> : <Menu />}
+                    {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
             </div>
 
+            {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="md:hidden absolute top-16 left-0 w-full bg-background border-b border-border p-4">
-                    <nav className="flex flex-col gap-4">
+                <div className="lg:hidden absolute top-20 left-0 w-full bg-white border-b border-gray-100 shadow-xl animate-in slide-in-from-top-2">
+                    <nav className="flex flex-col p-6 gap-2">
                         {navItems.map((item) => (
                             <Link
                                 key={item.path}
                                 to={item.path}
-                                className="text-sm font-medium"
+                                className="flex items-center px-4 py-3 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900 rounded-lg transition-colors"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 {item.label}
                             </Link>
                         ))}
-                        <button
-                            onClick={() => {
-                                setIsMobileMenuOpen(false);
-                                handleBookCall();
-                            }}
-                            className="flex items-center justify-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-medium"
-                        >
-                            <Phone size={16} />
-                            Book a Call
-                        </button>
+                        <div className="pt-4 mt-2 border-t border-gray-100">
+                            <button
+                                onClick={() => {
+                                    setIsMobileMenuOpen(false);
+                                    handleBookCall();
+                                }}
+                                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-slate-900 text-white rounded-lg text-base font-semibold active:bg-slate-800"
+                            >
+                                <Phone size={18} />
+                                Book a Call
+                            </button>
+                        </div>
                     </nav>
                 </div>
             )}
