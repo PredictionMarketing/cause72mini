@@ -327,15 +327,49 @@ const HomePage = () => {
                 </div>
             </section>
 
-            {/* Trust Footer */}
-            <div className="bg-slate-50 py-12 border-t border-slate-200">
-                <div className="container mx-auto px-6 text-center">
-                    <p className="text-slate-600 text-sm leading-relaxed max-w-2xl mx-auto">
-                        <strong className="text-slate-900">Cause72</strong> provides exclusive motor vehicle accident intelligence
-                        to personal injury attorneys through strict DPPA-compliant methods. One firm per territory. No exceptions.
-                    </p>
-                    <div className="mt-6 text-xs text-slate-500">
-                        © 2026 Cause72. All rights reserved. | Privacy Policy | Terms of Service | DPPA Compliance
+            {/* Footer with Navigation */}
+            <div className="bg-slate-50 border-t border-slate-200">
+                <div className="container mx-auto px-6 py-12">
+                    {/* Navigation Links */}
+                    <div className="grid md:grid-cols-3 gap-8 mb-8">
+                        <div>
+                            <h3 className="font-bold text-slate-900 mb-4">Company</h3>
+                            <ul className="space-y-2 text-sm text-slate-600">
+                                <li><a href="/" className="hover:text-blue-600 transition-colors">Home</a></li>
+                                <li><a href="https://calendly.com/tommylc" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">Schedule Consultation</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 className="font-bold text-slate-900 mb-4">Resources</h3>
+                            <ul className="space-y-2 text-sm text-slate-600">
+                                <li><a href="/personal-injury/motor-vehicle-accident-intelligence" className="hover:text-blue-600 transition-colors">Motor Vehicle Accident Intelligence</a></li>
+                                <li><a href="/personal-injury/dppa-compliance-motor-vehicle-accident-data" className="hover:text-blue-600 transition-colors">DPPA Compliance</a></li>
+                                <li><a href="/personal-injury/inside-motor-vehicle-accident-reports" className="hover:text-blue-600 transition-colors">Inside Accident Reports</a></li>
+                                <li><a href="/personal-injury/investigative-mva-intelligence-for-law-firms" className="hover:text-blue-600 transition-colors">Investigative Intelligence</a></li>
+                                <li><a href="/personal-injury/mva-intelligence-case-intake-and-case-value" className="hover:text-blue-600 transition-colors">Case Intake & Value</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 className="font-bold text-slate-900 mb-4">Legal</h3>
+                            <ul className="space-y-2 text-sm text-slate-600">
+                                <li><a href="#" className="hover:text-blue-600 transition-colors">Privacy Policy</a></li>
+                                <li><a href="#" className="hover:text-blue-600 transition-colors">Terms of Service</a></li>
+                                <li><a href="#" className="hover:text-blue-600 transition-colors">DPPA Compliance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Bottom Bar */}
+                    <div className="pt-8 border-t border-slate-200 text-center">
+                        <p className="text-slate-600 text-sm leading-relaxed max-w-2xl mx-auto mb-4">
+                            <strong className="text-slate-900">Cause72</strong> provides exclusive motor vehicle accident intelligence
+                            to personal injury attorneys through strict DPPA-compliant methods. One firm per territory. No exceptions.
+                        </p>
+                        <div className="text-xs text-slate-500">
+                            © 2026 Cause72. All rights reserved.
+                        </div>
                     </div>
                 </div>
             </div>
