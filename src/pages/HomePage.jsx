@@ -378,7 +378,9 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            );
+            <Footer />
+        </>
+    );
 };
 
-            export default HomePage;
+export default HomePage;
