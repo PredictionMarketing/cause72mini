@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
 import MotorVehicleAccidentIntelligence from './pages/MotorVehicleAccidentIntelligence';
 import DppaCompliance from './pages/DppaCompliance';
 import InsideAccidentReports from './pages/InsideAccidentReports';
@@ -10,8 +11,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/personal-injury/motor-vehicle-accident-intelligence" replace />} />
+        {/* Homepage - New blended landing page */}
+        <Route path="/" element={<HomePage />} />
 
+        {/* Article Pages */}
         <Route
           path="/personal-injury/motor-vehicle-accident-intelligence"
           element={<MotorVehicleAccidentIntelligence />}
@@ -32,8 +35,6 @@ function App() {
           path="/personal-injury/mva-intelligence-case-intake-and-case-value"
           element={<CaseIntakeValue />}
         />
-        // Fallback
-        <Route path="*" element={<Navigate to="/personal-injury/motor-vehicle-accident-intelligence" replace />} />
       </Routes>
     </Router>
   );
