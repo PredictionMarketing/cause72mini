@@ -13,8 +13,18 @@ const InsideAccidentReports = () => {
             <div className="min-h-screen flex flex-col bg-background">
                 <Header />
                 <main className="flex-1 pt-20">
-                    <article className="max-w-4xl mx-auto px-4 py-12 md:py-16">
-                        <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-8 leading-tight">
+                    <article className="max-w-4xl mx-auto px-4 py-8 md:py-12">
+                        {/* Header Image */}
+                        <div className="w-full mb-10 overflow-hidden rounded-2xl shadow-lg border border-slate-100">
+                            <img
+                                src="/assets/images/reports_header.jpg"
+                                alt="Inside a Motor Vehicle Accident Report: What Attorneys Need to Know"
+                                className="w-full h-auto object-cover"
+                            />
+                        </div>
+
+                        {/* SEO H1 (Visually Hidden as image contains title) */}
+                        <h1 className="sr-only">
                             Inside a Motor Vehicle Accident Report: What Attorneys Need to Know
                         </h1>
 

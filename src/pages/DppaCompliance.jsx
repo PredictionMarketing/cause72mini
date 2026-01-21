@@ -13,8 +13,18 @@ const DppaCompliance = () => {
             <div className="min-h-screen flex flex-col bg-background">
                 <Header />
                 <main className="flex-1 pt-20">
-                    <article className="max-w-4xl mx-auto px-4 py-12 md:py-16">
-                        <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-8 leading-tight">
+                    <article className="max-w-4xl mx-auto px-4 py-8 md:py-12">
+                        {/* Header Image */}
+                        <div className="w-full mb-10 overflow-hidden rounded-2xl shadow-lg border border-slate-100">
+                            <img
+                                src="/assets/images/compliance_header.jpg"
+                                alt="DPPA Compliance for Attorneys: Understanding Access to Motor Vehicle Accident Data"
+                                className="w-full h-auto object-cover"
+                            />
+                        </div>
+
+                        {/* SEO H1 (Visually Hidden as image contains title) */}
+                        <h1 className="sr-only">
                             DPPA Compliance for Attorneys: Understanding Access to Motor Vehicle Accident Data
                         </h1>
 
@@ -57,15 +67,12 @@ const DppaCompliance = () => {
                                 <p className="mb-6">
                                     Accident reports are generally created by law enforcement, not the DMV. However, many states incorporate driver information into these reports, which may be redacted or limited depending on state law and privacy requirements.
                                 </p>
-                                <p className="mb-6">This means:</p>
+                                <p className="mb-6">This depends on:</p>
                                 <ul className="list-disc pl-6 mb-6 space-y-2">
-                                    <li>Some information inside crash reports may be protected by DPPA.</li>
-                                    <li>States vary on how much identifying information they release by default.</li>
-                                    <li>Some states provide redacted reports until an attorney client relationship is established.</li>
+                                    <li>The state’s statutory privacy rules</li>
+                                    <li>The agency holding the record</li>
+                                    <li>The type of personal data included in the accident documentation</li>
                                 </ul>
-                                <p className="mb-6">
-                                    Attorneys can typically access full reports once they have a permissible use, including litigation or investigation in anticipation of litigation.
-                                </p>
 
                                 <h3 className="text-xl font-semibold text-foreground mb-4">Using Licensed Investigators Under DPPA</h3>
                                 <p className="mb-6">
