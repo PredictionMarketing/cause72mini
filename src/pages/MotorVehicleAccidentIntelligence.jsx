@@ -191,6 +191,32 @@ const MotorVehicleAccidentIntelligence = () => {
                                 </p>
                             </div>
                         </section>
+
+                        {/* CTA Section */}
+                        <section className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+                            <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+                                Explore Motor Vehicle Accident Intelligence For Your Firm
+                            </h2>
+                            <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground">
+                                <p className="mb-4">
+                                    If you want to see how accident intelligence, property damage data, or other structured legal data can support your intake and case strategy, you can schedule a Legal AI Intelligence Strategy Call.
+                                </p>
+                                <p className="mb-6">
+                                    During that call we can review your current workflow, identify where accident data would help most, and outline practical next steps tailored to your jurisdiction and goals.
+                                </p>
+                                <a
+                                    href="https://calendly.com/tommylc"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors no-underline"
+                                >
+                                    Request a private consult
+                                </a>
+                                <p className="text-sm text-slate-500 mt-4">
+                                    This link opens the main Cause72 booking page for all legal AI and data intelligence consults.
+                                </p>
+                            </div>
+                        </section>
                     </article>
                 </main>
                 <Footer />

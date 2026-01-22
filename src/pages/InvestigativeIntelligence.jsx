@@ -150,6 +150,29 @@ const InvestigativeIntelligence = () => {
                                 </p>
                             </div>
                         </section>
+
+                        {/* CTA Section */}
+                        <section className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+                            <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+                                Explore How Investigative Intelligence Can Strengthen Your Cases
+                            </h2>
+                            <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground">
+                                <p className="mb-6">
+                                    If you want to improve intake quality, strengthen liability arguments, or integrate investigative intelligence into your workflow, you can schedule a Legal AI Intelligence Strategy Call.
+                                </p>
+                                <a
+                                    href="https://calendly.com/tommylc"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors no-underline"
+                                >
+                                    Request a private consult
+                                </a>
+                                <p className="text-sm text-slate-500 mt-4">
+                                    This link opens the main Cause72 booking page for all consults.
+                                </p>
+                            </div>
+                        </section>
                     </article>
                 </main>
                 <Footer />
