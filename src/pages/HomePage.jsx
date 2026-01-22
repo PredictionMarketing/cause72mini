@@ -84,7 +84,7 @@ const HomePage = () => {
                                 within 72 hours—before it becomes public knowledge.
                             </p>
 
-                            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <div className="grid md:grid-cols-3 gap-8">
                                 <div className="text-center">
                                     <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                                         <Clock className="text-blue-600" size={32} />
