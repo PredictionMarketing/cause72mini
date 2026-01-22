@@ -103,8 +103,8 @@ const MotorVehicleAccidentDataReporting = () => {
                             />
                             <FeatureCard
                                 icon={Lock}
-                                title="4. Permanent Advantage"
-                                description="Your territorial exclusivity is permanent. As long as you maintain your territory, competitors remain locked out. No bidding wars. No competition for these cases."
+                                title="4. 60-Day Exclusive Window"
+                                description="Your lead exclusivity lasts 60 days. During this window, competitors remain locked out. No bidding wars. No competition for this lead during your exclusive period."
                             />
                         </div>
                     </div>

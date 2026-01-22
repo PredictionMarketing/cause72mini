@@ -114,19 +114,8 @@ const HomePage = () => {
                                         Injury indicators, insurance details, and engagement opportunities in every report.
                                     </p>
                                 </div>
-
-                                <div className="text-center">
-                                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                        <Zap className="text-blue-600" size={32} />
-                                    </div>
-                                    <h3 className="font-bold text-lg mb-2">DPPA Compliant</h3>
-                                    <p className="text-sm text-slate-600">
-                                        Full legal compliance. No DMV purchases. No privacy violations. Bulletproof.
-                                    </p>
-                                </div>
                             </div>
                         </div>
-                    </div>
                 </section>
 
                 {/* How It Works */}
