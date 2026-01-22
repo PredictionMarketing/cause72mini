@@ -218,11 +218,11 @@ const MotorVehicleAccidentDataReporting = () => {
                     </div>
                 </section>
 
-                {/* Territory Availability + Decision Framework */}
+                {/* Lead Availability + Decision Framework */}
                 <section className="py-20 bg-white">
                     <div className="container mx-auto px-6 max-w-3xl text-center">
-                        <h2 className="text-3xl font-bold mb-6">Territory Availability</h2>
-                        <p className="text-slate-600 mb-8">Territories are being claimed daily. Once a territory is taken, it's permanently unavailable.</p>
+                        <h2 className="text-3xl font-bold mb-6">Lead Availability</h2>
+                        <p className="text-slate-600 mb-8">Leads are being claimed daily. Once a lead is taken, it's exclusive for 60 days.</p>
 
                         <button
                             onClick={() => handleCtaClick('check_territory_status')}
