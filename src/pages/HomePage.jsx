@@ -16,7 +16,7 @@ const HomePage = () => {
             <div className="bg-white min-h-screen font-sans text-slate-900 pt-20">
                 <Helmet>
                     <title>Cause72 - Exclusive Motor Vehicle Accident Intelligence for Personal Injury Attorneys</title>
-                    <meta name="description" content="Get exclusive access to comprehensive motor vehicle accident intelligence within 72 hours. One firm per territory. DPPA compliant. Stop competing. Start owning your market." />
+                    <meta name="description" content="Get exclusive access to comprehensive motor vehicle accident intelligence within 72 hours. One firm per lead with 60-day exclusivity. DPPA compliant. Stop competing. Start owning your market." />
                 </Helmet>
 
                 {/* Hero Section */}
@@ -33,7 +33,7 @@ const HomePage = () => {
                             </h1>
                             <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-3xl mx-auto">
                                 Exclusive motor vehicle accident intelligence delivered within 72 hours.
-                                One firm per territory means zero competition for your cases.
+                                One firm per lead with 60-day exclusivity means zero competition during your window.
                             </p>
                             <button
                                 onClick={() => handleCtaClick('hero_cta')}
@@ -99,9 +99,9 @@ const HomePage = () => {
                                     <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                                         <Shield className="text-blue-600" size={32} />
                                     </div>
-                                    <h3 className="font-bold text-lg mb-2">Territorial Exclusivity</h3>
+                                    <h3 className="font-bold text-lg mb-2">Lead Exclusivity</h3>
                                     <p className="text-sm text-slate-600">
-                                        One firm per territory. Once you claim it, competitors are permanently locked out.
+                                        One firm per lead with 60-day exclusive advantage. No competition during your window.
                                     </p>
                                 </div>
 
@@ -141,10 +141,10 @@ const HomePage = () => {
                                         1
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold mb-2">Claim Your Territory</h3>
+                                        <h3 className="text-xl font-bold mb-2">Claim Your Lead</h3>
                                         <p className="text-slate-600 leading-relaxed">
-                                            Choose your geographic area. Once claimed, no other firm—regardless of size—can access
-                                            intelligence from your territory. Your exclusivity is permanent and contractually protected.
+                                            When a lead is claimed, you get 60-day exclusive access. During this period, no other firm—regardless of size—can access
+                                            that lead's intelligence. Your advantage window is protected and enforceable.
                                         </p>
                                     </div>
                                 </div>
