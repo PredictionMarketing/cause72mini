@@ -116,6 +116,7 @@ const HomePage = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </section>
 
                 {/* How It Works */}
