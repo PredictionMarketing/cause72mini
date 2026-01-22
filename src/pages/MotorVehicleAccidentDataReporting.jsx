@@ -31,7 +31,7 @@ const MotorVehicleAccidentDataReporting = () => {
         <div className="bg-white min-h-screen font-sans text-slate-900">
             <Helmet>
                 <title>Motor Vehicle Accident Data Reporting | Cause72</title>
-                <meta name="description" content="One firm per territory gets exclusive access to comprehensive accident intelligence. Once claimed, no competitor can access your territory's data." />
+                <meta name="description" content="One firm per lead gets exclusive access to comprehensive accident intelligence for 60 days. No competition during your exclusivity period." />
             </Helmet>
 
             <Header />
@@ -50,7 +50,7 @@ const MotorVehicleAccidentDataReporting = () => {
                                 <span className="text-blue-400">Exclusively Yours.</span>
                             </h1>
                             <p className="text-xl md:text-2xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-                                One firm per territory gets exclusive access to comprehensive accident intelligence. Once claimed, no competitor—regardless of size or resources—can access your territory's data.
+                                One firm per lead gets exclusive access to comprehensive accident intelligence for 60 days. During your exclusivity period, no competitor—regardless of size or resources—can access your lead's data.
                             </p>
                             <button
                                 onClick={() => handleCtaClick('hero_check_territory')}
@@ -157,30 +157,7 @@ const MotorVehicleAccidentDataReporting = () => {
                     </div>
                 </section>
 
-                {/* The Numbers That Matter */}
-                <section className="py-20 bg-slate-900 text-white">
-                    <div className="container mx-auto px-6">
-                        <h2 className="text-3xl font-bold text-center mb-16">The Numbers That Matter</h2>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                            <div className="text-center">
-                                <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">72</div>
-                                <div className="text-sm md:text-base text-slate-400">Hours to Intelligence</div>
-                            </div>
-                            <div className="text-center">
-                                <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">1</div>
-                                <div className="text-sm md:text-base text-slate-400">Firm Per Territory</div>
-                            </div>
-                            <div className="text-center">
-                                <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">100%</div>
-                                <div className="text-sm md:text-base text-slate-400">DPPA Compliant</div>
-                            </div>
-                            <div className="text-center">
-                                <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">0</div>
-                                <div className="text-sm md:text-base text-slate-400">Competition</div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
 
                 {/* Compliance */}
                 <section className="py-20 bg-white">
@@ -191,8 +168,6 @@ const MotorVehicleAccidentDataReporting = () => {
                         </p>
                         <div className="grid md:grid-cols-2 gap-6 text-left">
                             {[
-                                { title: "DPPA Compliant", desc: "Full adherence to Driver's Privacy Protection Act" },
-                                { title: "Bar Approved", desc: "Meets state bar ethical requirements" },
                                 { title: "Privacy Protected", desc: "SOC 2 certified, HIPAA compliant infrastructure" },
                                 { title: "Ethically Sourced", desc: "No DMV purchases, no privacy violations" }
                             ].map((item, i) => (
