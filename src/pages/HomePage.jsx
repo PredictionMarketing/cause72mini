@@ -7,7 +7,7 @@ import Footer from '../components/layout/Footer';
 const HomePage = () => {
     const handleCtaClick = (source) => {
         const currentUrl = encodeURIComponent(window.location.href);
-        window.location.href = `https://calendly.com/tommylc?referrer=${currentUrl}&cta=${source}`;
+        window.location.href = `https://calendly.com/tommyandbrent-cause72?referrer=${currentUrl}&cta=${source}`;
     };
 
     return (
@@ -330,7 +330,7 @@ const HomePage = () => {
                                 <h3 className="font-bold text-slate-900 mb-4">Company</h3>
                                 <ul className="space-y-2 text-sm text-slate-600">
                                     <li><a href="/" className="hover:text-blue-600 transition-colors">Home</a></li>
-                                    <li><a href="https://calendly.com/tommylc" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">Schedule Consultation</a></li>
+                                    <li><a href="https://calendly.com/tommyandbrent-cause72" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">Schedule Consultation</a></li>
                                 </ul>
                             </div>
 

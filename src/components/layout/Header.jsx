@@ -7,7 +7,7 @@ const Header = () => {
 
     const handleBookCall = () => {
         const currentUrl = encodeURIComponent(window.location.href);
-        window.location.href = `https://calendly.com/tommylc?referrer=${currentUrl}`;
+        window.location.href = `https://calendly.com/tommyandbrent-cause72?referrer=${currentUrl}`;
     };
 
     const navItems = [

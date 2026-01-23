@@ -205,7 +205,7 @@ const MotorVehicleAccidentIntelligence = () => {
                                     During that call we can review your current workflow, identify where accident data would help most, and outline practical next steps tailored to your jurisdiction and goals.
                                 </p>
                                 <a
-                                    href="https://calendly.com/tommylc"
+                                    href="https://calendly.com/tommyandbrent-cause72"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors no-underline"
