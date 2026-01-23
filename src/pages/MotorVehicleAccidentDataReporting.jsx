@@ -7,6 +7,13 @@ import Footer from '../components/layout/Footer';
 const MotorVehicleAccidentDataReporting = () => {
     const handleCtaClick = (source) => {
         const currentUrl = encodeURIComponent(window.location.href);
+        // Track in FullStory
+        if (window.FS) {
+            window.FS.event('Calendly Click', {
+                source: source,
+                page: 'data-reporting'
+            });
+        }
         window.open(`https://calendly.com/tommyandbrent-cause72?referrer=${currentUrl}&cta=${source}`, '_blank');
     };
 

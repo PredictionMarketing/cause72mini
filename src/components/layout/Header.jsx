@@ -7,6 +7,13 @@ const Header = () => {
 
     const handleBookCall = () => {
         const currentUrl = encodeURIComponent(window.location.href);
+        // Track in FullStory
+        if (window.FS) {
+            window.FS.event('Calendly Click', {
+                source: 'header_book_call',
+                page: window.location.pathname
+            });
+        }
         window.open(`https://calendly.com/tommyandbrent-cause72?referrer=${currentUrl}`, '_blank');
     };
 
