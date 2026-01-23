@@ -7,7 +7,7 @@ import Footer from '../components/layout/Footer';
 const HomePage = () => {
     const handleCtaClick = (source) => {
         const currentUrl = encodeURIComponent(window.location.href);
-        window.location.href = `https://calendly.com/tommyandbrent-cause72?referrer=${currentUrl}&cta=${source}`;
+        window.open(`https://calendly.com/tommyandbrent-cause72?referrer=${currentUrl}&cta=${source}`, '_blank');
     };
 
     return (

@@ -7,7 +7,7 @@ const Header = () => {
 
     const handleBookCall = () => {
         const currentUrl = encodeURIComponent(window.location.href);
-        window.location.href = `https://calendly.com/tommyandbrent-cause72?referrer=${currentUrl}`;
+        window.open(`https://calendly.com/tommyandbrent-cause72?referrer=${currentUrl}`, '_blank');
     };
 
     const navItems = [
