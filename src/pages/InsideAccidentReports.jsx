@@ -172,7 +172,7 @@ const InsideAccidentReports = () => {
                                     If you want to improve case screening, strengthen liability evaluation, or integrate structured accident intelligence into your workflow, you can schedule a Legal AI Intelligence Strategy Call.
                                 </p>
                                 <a
-                                    href="https://calendly.com/tommylc"
+                                    href="https://calendly.com/tommyandbrent-cause72"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors no-underline"

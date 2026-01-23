@@ -163,7 +163,7 @@ const CaseIntakeValue = () => {
                                     If you want to see how accident intelligence can support your intake process, case selection, and case value strategy, you can schedule a Legal AI Intelligence Strategy Call.
                                 </p>
                                 <a
-                                    href="https://calendly.com/tommylc"
+                                    href="https://calendly.com/tommyandbrent-cause72"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors no-underline"
